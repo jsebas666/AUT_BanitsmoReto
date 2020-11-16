@@ -2,6 +2,7 @@ package com.prueba.stepdefinitions;
 
 import com.prueba.tasks.AbrirNavegador;
 import com.prueba.tasks.Ingresar;
+import com.prueba.tasks.IngresarOpcion;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
@@ -36,6 +37,7 @@ public class VerificarPdfStepsDefinitions {
     @Cuando("^descarga el balance de sus estados financieros$")
     public void descargaElBalanceDeSusEstadosFinancieros() throws Exception {
         JUANSE.attemptsTo(Ingresar.alPresupuesto());
+        JUANSE.attemptsTo(IngresarOpcion.estadoFinanciero());
     }
 
     @Entonces("^verifica que su pdf sea el correcto$")
