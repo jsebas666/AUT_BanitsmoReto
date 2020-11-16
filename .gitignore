@@ -1,0 +1,27 @@
+#JAVA
+*.class
+
+!/.gitignore
+bin/
+target/
+/build/
+
+# Log file
+*.log
+
+# Package Files #
+.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#INTELLIJ IDEA
+# User-specific stuff:
+.idea/
+*.iml
+out/
+
+#Serenity
+build/
+.gradle/

@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'co.com.prueba'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'net.serenity-bdd:serenity-core:1.1.1'
+    testCompile 'net.serenity-bdd:serenity-junit:1.1.1'
+    testCompile ('junit:junit:4.12')
+    testCompile ('org.assertj:assertj-core:1.7.0')
+    testCompile ('org.slf4j:slf4j-simple:1.7.7')
+
+
+    compile group: 'net.sf.jt400', name: 'jt400', version: '9.4'
+
+    compile 'net.serenity-bdd:serenity-core:1.9.9'
+    compile 'net.serenity-bdd:serenity-junit:1.9.9'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
+    compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
+    compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+    compile group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
+}
